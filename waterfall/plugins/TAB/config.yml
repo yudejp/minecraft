@@ -1,0 +1,99 @@
+# Detailed explanation of all options available at https://github.com/NEZNAMY/TAB/wiki/config.yml
+
+change-nametag-prefix-suffix: false
+change-tablist-prefix-suffix: false
+enable-header-footer: true
+global-playerlist:
+  enabled: false
+  display-others-as-spectators: false
+  spy-servers:
+  - spyserver1
+  - spyserver2
+  server-groups:
+    lobbies:
+    - lobby1
+    - lobby2
+    group2:
+    - server1
+    - server2
+header:
+- '&6yude.jp'
+footer:
+- '&7%time% JST'
+yellow-number-in-tablist: ''
+group-sorting-priority-list:
+Groups:
+Users:
+classic-vanilla-belowname:
+  enabled: false
+  number: '%ping%'
+  text: Ping
+enable-collision: true
+revert-collision-rule-in-worlds:
+- revertedworld
+do-not-move-spectators: false
+allow-spectator-bypass-permission: false
+per-server-settings:
+placeholders:
+  date-format: ''
+  time-format: 'HH:mm:ss'
+  time-offset: 0
+  remove-strings:
+  - '[]'
+  - < >
+server-aliases:
+  hub: '&eHub'
+  survival: '&bSurvival'
+  plot: '&cPlot'
+rank-aliases:
+  Admin: '&4&lADMIN'
+  Mod: '&b&lMOD'
+  Premium: '&6&lPREMIUM'
+  Ultra: '&b&lULTRA'
+  Legend: '&a&lLEGEND'
+  Titan: '&c&lTITAN'
+  Youtuber: '&c&lYOUTUBE'
+  _OTHER_: '&7No Rank'
+disable-features-in-servers:
+  header-footer:
+  - disabledserver
+  tablist-names:
+  - disabledserver
+  nametag:
+  - disabledserver
+  yellow-number:
+  - disabledserver
+  bossbar:
+  - disabledserver
+  belowname:
+  - disabledserver
+placeholderapi-refresh-intervals:
+  default-refresh-interval: 100
+  server:
+    '%server_uptime%': 1000
+    '%server_tps_1_colored%': 1000
+  player:
+    '%player_health%': 200
+    '%player_ping%': 1000
+    '%vault_prefix%': 1000
+  relational:
+    '%rel_factionsuuid_relation_color%': 500
+sort-players-by-permissions: false
+use-primary-group: true
+primary-group-finding-list:
+- Owner
+- Admin
+- Helper
+- default
+assign-groups-by-permissions: false
+revert-collision-rule-in-servers:
+- revertedserver
+use-bukkit-permissions-manager: false
+anti-override:
+  scoreboard-teams: true
+  tablist-names: true
+  usernames: true
+  scoreboard-objectives: true
+invisible-nametags: false
+ping-spoof:
+  enabled: false

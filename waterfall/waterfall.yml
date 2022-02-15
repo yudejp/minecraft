@@ -1,0 +1,11 @@
+throttling:
+  tab_complete: 1000
+log_initial_handler_connections: false
+registered_plugin_channels_limit: 128
+use_netty_dns_resolver: true
+allow_empty_packets: false
+game_version: ''
+disable_tab_list_rewrite: false
+disable_entity_metadata_rewrite: false
+disable_modern_tab_limiter: true
+plugin_channel_name_limit: 128

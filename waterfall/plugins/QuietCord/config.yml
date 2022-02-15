@@ -1,0 +1,64 @@
+# QuietCord configuration file
+# Refer to https://github.com/xxyy/quietcord for help.
+# If you have not idea, please open an issue at
+# https://github.com/xxyy/quietcord/issues
+
+# Note: People might get confused if the messages filtered by this plugin
+#        are missing in your log files. When troubleshooting or debugging,
+#        it is recommended to temporarily disable this plugin.
+#        (except if you're debugging this plugin itself, obviously)
+# To disable the plugin entirely, set this to true:
+disable: false
+
+# Let's configure what you want to filter
+filter:
+    # Filters related to InitalHandler
+    initialhandler:
+      # Do you want to filter InitialHandler ping messages? (true/false)
+      # These are lines written to the log every time a player opens their server
+      # list with your network in it. Since this produces a lot of spam and provides
+      # few useful information, it is recommended to turn this filter on. (the default)
+      #
+      # Here's what the filtered messages look like:
+      # 18:17:51 [INFO] [/127.0.0.1:50046] <-> InitialHandler has connected
+      ping: true
+
+      # Do you want to filter InitialHandler join messages? (true/false)
+      # These lines are written to the log every time a player actively joins
+      # your network. While, normally, you do not really need those, since
+      # another message is printed when the player is connected to a server,
+      # these messages can be helpful for understanding what is happening, so
+      # consider turning this filter off. (the default) This option is mainly
+      # intended for when you have a plugin printing an informational message
+      # at every join, so the InitialHandler message is implied. (e.g. BungeePerms)
+      #
+      # Here's what the filtered messages look like:
+      # 18:17:59 [INFO] [Literallie] <-> InitialHandler has connected
+      join: false
+
+      # Do you want to ignore connection reset errors for InitialHandler? (true/false)
+      # Normally, this shouldn't be necessary at all, but apparently there are cases
+      # where this could be safely ignored. Not normally though. If you get error
+      # messages like this: (filtered by this filter)
+      # [WARNING] [/127.0.0.1:50046] <-> InitialHandler - IOException: Connection reset by peer
+      # Then FIRST try setting connection-throttle to -1 in BOTH your BungeeCord's config.yml
+      # and your Spigot's bukkit.yml. If the issue still persists and you are definitely
+      # sure that you want to block these messages, enable the filter below.
+      # Also make sure you exactly know what connection-throttle does before setting it to -1.
+      #
+      # Professional developer Janmm14, however, suggests leaving connection-throttle at the 
+      # default value. So if it does not fix your issue, make sure to reset it or he will
+      # haunt you in your dreams: https://github.com/xxyy/quietcord/issues/4
+      #
+      # Use of this filter is not recommended, hence the default is false.
+      # Also note that this cannot filter these messages in all cases, since these are produced
+      # by the underlying operation system and that often takes the user language in account.
+      # This should be fine for English systems, but note that this might not work on systems
+      # with other languages. If you still see a message like this in your system language,
+      # change the message below.
+      reset-by-peer: false
+      reset-by-peer-message: "connection reset by peer"
+
+# That's it for now.
+config-version: 1
+debug: false

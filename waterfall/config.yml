@@ -1,0 +1,53 @@
+prevent_proxy_connections: false
+listeners:
+- query_port: 25565
+  motd: |-
+    &6yude.jp &7Minecraft Multiplayer
+    &7Web: https://yude.jp &8/ &7Twitter: @yudejp
+  tab_list: GLOBAL_PING
+  query_enabled: true
+  proxy_protocol: true
+  forced_hosts:
+    yude.jp: main
+  ping_passthrough: true
+  priorities:
+  - main
+  bind_local_address: true
+  host: 0.0.0.0:25565
+  max_players: 50
+  tab_size: 60
+  force_default_server: false
+remote_ping_cache: -1
+network_compression_threshold: 64
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  staff:
+  - '*'
+log_pings: false
+connection_throttle_limit: -1
+server_connect_timeout: 5000
+timeout: 30000
+player_limit: 50
+ip_forward: true
+groups:
+  yude:
+  - staff
+remote_ping_timeout: 5000
+connection_throttle: 3
+log_commands: false
+stats: e5ed4511-af33-4c32-9757-48ac128bc306
+online_mode: true
+forge_support: true
+disabled_commands:
+- version
+- plugins
+- pl
+- ver
+- kill
+servers:
+  main:
+    motd: main
+    address: papermc:25577
+    restricted: false

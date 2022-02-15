@@ -1,0 +1,7 @@
+#Don't change this please!
+config_version: 1
+
+#This can be "FML", "BUKKIT" and "VANILLA".
+#The client will react in adding a logo for it in the multiplayer list.
+#Default VANILLA
+type: FML
