@@ -29,4 +29,19 @@ services:
   #   extra_hosts:
   #     - "host.docker.internal:host-gateway"
   #   restart: unless-stopped
-  
+
+  # MariaDB for CoreProtect plugin on PaperMC
+  coreprotect_db:
+        image: mariadb:10.5
+        volumes:
+          - ./db/data:/val/lib/mysql
+          - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
+          - ./db/sql:docker-entrypoint-initdb.d
+          - ./db/log:/val/log/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: coreprotect
+            MYSQL_DATABASE: coreprotect
+            MYSQL_USER: coreprotect
+            MYSQL_PASSWORD: coreprotect
+            TZ: 'Asia/Tokyo'
+        command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_bin
