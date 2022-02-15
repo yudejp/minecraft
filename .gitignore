@@ -1,7 +1,18 @@
 # PaperMC
+## Libraries, caches, etc.
+papermc/libraries
+papermc/versions
+papermc/logs
+papermc/cache
+papermc/version_history.json
+papermc/usercache.json
+## Worlds
+papermc/world
+papermc/world_nether
+papermc/world_the_end
 ## Configurations
-### eula.txt
 papermc/eula.txt
+papermc/wepif.yml
 ## Plugins
 papermc/plugins/*.jar
 ### mcMMO
@@ -26,7 +37,8 @@ papermc/plugins/CoreProtect/language.yml
 ### bStats
 papermc/plugins/bStats/config.yml
 ### BlueMap
-papermc/plugins/BlueMap/resourcepacks
+papermc/bluemap
+papermc/BlueMap
 ### Multiverse-Core
 papermc/plugins/Multiverse-Core/scripts
 papermc/plugins/Multiverse-Core/worlds.yml
