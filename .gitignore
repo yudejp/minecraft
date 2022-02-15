@@ -59,3 +59,11 @@ papermc/plugins/WorldGuard/worlds
 ### OasisWarps
 papermc/plugins/OasisWarps/warps.yml
 papermc/server.properties
+
+# Waterfall
+waterfall/plugins/*.jar
+## Configurations
+waterfall/locations.yml
+## Plugins
+### bStats
+waterfall/plugins/bStats/temp.txt
