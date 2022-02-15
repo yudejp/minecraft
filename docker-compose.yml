@@ -4,7 +4,6 @@ services:
 
   # PaperMC
   papermc:
-    restart: unless-stopped
     build:
       context: papermc
       dockerfile: Dockerfile
@@ -16,7 +15,6 @@ services:
       JAVA_OPTS: "-Xms1G -Xmx2G"
 
   waterfall:
-    restart: unless-stopped
     build:
       context: waterfall
       dockerfile: Dockerfile
@@ -30,22 +28,23 @@ services:
       JAVA_OPTS: "-Xms256M -Xmx512M"
 
   # cloudflared daemon for Bluemap Web UI
-  # cloudflared-bluemap:
-  #   image: ghcr.io/milgradesec/cloudflared:latest
-  #   user: root
-  #   command: tunnel
-  #   environment:
-  #     - TUNNEL_HOSTNAME=bluemap-test.yude.jp
-  #     - TUNNEL_URL=http://papermc:8100
-  #     - TUNNEL_ORIGIN_CERT=/root/.cloudflared/cert.pem
-  #   volumes:
-  #     - '$HOME/.cloudflared:/root/.cloudflared'
-  #   extra_hosts:
-  #     - "host.docker.internal:host-gateway"
-  #   restart: unless-stopped
+  cloudflared-bluemap:
+    image: ghcr.io/milgradesec/cloudflared:latest
+    user: root
+    command: tunnel
+    environment:
+      - TUNNEL_HOSTNAME=bluemap-test.yude.jp
+      - TUNNEL_URL=http://papermc:8100
+      - TUNNEL_ORIGIN_CERT=/root/.cloudflared/cert.pem
+    volumes:
+      - '$HOME/.cloudflared:/root/.cloudflared'
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
 
   # MariaDB for CoreProtect plugin on PaperMC
   coreprotect_db:
+    restart: unless-stopped
     image: mariadb:10.5
     volumes:
       - ./db/data:/val/lib/mysql
