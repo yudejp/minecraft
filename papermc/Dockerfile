@@ -21,7 +21,6 @@ WORKDIR /app
 # Cleanup
 # Copy files from builder
 COPY --from=builder /build/paper.jar /bin/
-#RUN echo $(ls)
 
 # Run the server (PaperMC)
 CMD ["sh", "run.sh"]
