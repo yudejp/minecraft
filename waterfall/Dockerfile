@@ -23,4 +23,4 @@ WORKDIR /app
 COPY --from=builder /build/waterfall.jar /bin/
 
 # Run the server (Waterfall)
-CMD java -server $JAVA_OPTS -jar /bin/paper.jar
+CMD java -server $JAVA_OPTS -jar /bin/waterfall.jar
