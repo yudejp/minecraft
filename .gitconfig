@@ -1,0 +1,3 @@
+[filter "server.properties"]
+    smudge = sed -e 's/\/\/.*//'
+    clean = cat
