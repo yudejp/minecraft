@@ -71,3 +71,4 @@ waterfall/locations.yml
 waterfall/plugins/*.jar
 ### bStats
 waterfall/plugins/bStats/temp.txt
+waterfall/config.yml
