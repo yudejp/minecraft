@@ -29,6 +29,7 @@ papermc/plugins/bStats/config.yml
 papermc/plugins/BlueMap/resourcepacks
 ## Multiverse-Core
 papermc/plugins/Multiverse-Core/scripts
+papermc/plugins/Multiverse-Core/worlds.yml
 ## PluginMetrics
 papermc/plugins/PluginMetrics/config.yml
 ## ProtocolLib
