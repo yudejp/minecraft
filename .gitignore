@@ -14,35 +14,35 @@ papermc/plugins/LuckPerms/libs
 papermc/plugins/LuckPerms/contexts
 papermc/plugins/LuckPerms/ja_JP.yml
 papermc/plugins/LuckPerms/luckperms-h2.mv.db
-## LockettePro
+### LockettePro
 papermc/plugins/LockettePro/lang*
-## ImageMaps
+### ImageMaps
 papermc/plugins/ImageMaps/images
 papermc/plugins/ImageMaps/maps.yml
-## CoreProtect
+### CoreProtect
 papermc/plugins/CoreProtect/.license
 papermc/plugins/CoreProtect/database.db
 papermc/plugins/CoreProtect/language.yml
-## bStats
+### bStats
 papermc/plugins/bStats/config.yml
-## BlueMap
+### BlueMap
 papermc/plugins/BlueMap/resourcepacks
-## Multiverse-Core
+### Multiverse-Core
 papermc/plugins/Multiverse-Core/scripts
 papermc/plugins/Multiverse-Core/worlds.yml
-## PluginMetrics
+### PluginMetrics
 papermc/plugins/PluginMetrics/config.yml
-## ProtocolLib
+### ProtocolLib
 papermc/plugins/ProtocolLib/lastupdate
-## VeinMiner
+### VeinMiner
 papermc/plugins/VeinMiner/playerdata
-## WorldEdit
+### WorldEdit
 papermc/plugins/WorldEdit/.archive-unpack
 papermc/plugins/WorldEdit/assets
 papermc/plugins/WorldEdit/schematics
 papermc/plugins/WorldEdit/sessions
-## WorldGuard
+### WorldGuard
 papermc/plugins/WorldGuard/cache
 papermc/plugins/WorldGuard/worlds
-## OasisWarps
+### OasisWarps
 papermc/plugins/OasisWarps/warps.yml
