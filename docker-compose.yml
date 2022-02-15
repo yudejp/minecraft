@@ -10,10 +10,22 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./papermc:/app
+    tty: true
+    stdin_open: true
+    environment:
+      JAVA_OPTS: "-Xms1G -Xmx2G"
+
+  waterfall:
+    restart: unless-stopped
+    build:
+      context: waterfall
+      dockerfile: Dockerfile
+    volumes:
+      - ./waterfall:/app
     ports:
       - 25565:25565
     environment:
-      JAVA_OPTS: "-Xms1G -Xmx2G"
+      JAVA_OPTS: "-Xms256M -Xmx512M"
 
   # cloudflared daemon for Bluemap Web UI
   # cloudflared-bluemap:
@@ -36,7 +48,7 @@ services:
     volumes:
       - ./db/data:/val/lib/mysql
       - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
-      - ./db/sql:docker-entrypoint-initdb.d
+      - ./db/sql:/docker-entrypoint-initdb.d
       - ./db/log:/val/log/mysql
     environment:
         MYSQL_ROOT_PASSWORD: coreprotect
