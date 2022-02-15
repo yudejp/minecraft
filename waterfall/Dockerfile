@@ -22,5 +22,5 @@ WORKDIR /app
 # Copy files from builder
 COPY --from=builder /build/waterfall.jar /bin/
 
-# Run the server (PaperMC)
-CMD ["sh", "run.sh"]
+# Run the server (Waterfall)
+CMD java -server $JAVA_OPTS -jar /bin/paper.jar
