@@ -23,4 +23,4 @@ WORKDIR /app
 COPY --from=builder /build/paper.jar /bin/
 
 # Run the server (PaperMC)
-CMD ["sh", "run.sh"]
+CMD java -server $JAVA_OPTS -jar /bin/paper.jar
