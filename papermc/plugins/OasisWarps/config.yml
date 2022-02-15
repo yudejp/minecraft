@@ -1,0 +1,40 @@
+safe-warp: false
+max-length: 20
+min-length: 2
+warp-list-amount: 40
+warp-delay: false
+warp-delay-time: 5
+warp-cooldown: 0
+warp-cancel-on-move: false
+per-warp-permission: false
+setwarp-limits:
+  default: 100
+  vip: 100
+  epic: 100
+messages:
+  warp-created: '&3ワープ &b{WARP} &3を作成しました。'
+  warp-deleted: '&3ワープ &b{WARP} &3を削除しました。'
+  warp-tp: '&b{WARP} &3にワープします...'
+  warp-tp-delay: '&3Teleporting in &b{DELAY} &3seconds. Don''t move.'
+  warp-tp-other: '&f{USER}&3 を &b{WARP} &3にワープさせます...'
+  warp-color: '&f'
+  warp-owned-color: '&a'
+  warp-list-none: '&fワープは1つも登録されていません。'
+  warp-list-info: '&b{WARPS} &3地点が登録されています。&b{MAX_PAGE}&3ページ中の&b{PAGE}&3ページを表示しています。'
+  plugin-reload: '&aOasisWarps の設定を再読込しました。'
+  incorrect-usage: '&c使用法が間違っています。使用法: {USAGE}'
+  no-permission: '&cそのコマンドを実行する権限がありません。'
+  no-permission-action: '&cYou do not have the required permissions to {ACTION}!'
+  warp-already-exists: '&cSorry, but that warp already exists.'
+  warp-no-exist: '&cそのような名前のワープ地点は存在しません。'
+  warp-cooldown: '&cYou cannot warp for another {COOLDOWN} seconds.'
+  warp-cancelled: '&cTeleport cancelled, you moved!'
+  warp-no-perm: '&cYou do not have permission to teleport to &6{WARP}&c.'
+  long-name: '&c登録できるワープ地点の名前は最大{MAX}文字です。'
+  short-name: '&c登録できるワープ地点の名前は最小{MIN}文字です。'
+  illegal-char: '&cワープ地点の名前にはアルファベットとアンダーバー (_) が使えます。'
+  limit-reached: '&cSorry, but you are not able to set any more warps.'
+  not-online: '&cThat player is not online.'
+  warp-list-not-number: '&cページ数は数字でなければいけません。'
+  warp-list-no-exist: '&cそのページは存在しません。'
+  warp-unsafe: '&cワープ先の地点が危険であるため、テレポートを中止しました。'
