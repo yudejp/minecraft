@@ -44,3 +44,5 @@ papermc/plugins/WorldEdit/sessions
 ## WorldGuard
 papermc/plugins/WorldGuard/cache
 papermc/plugins/WorldGuard/worlds
+## OasisWarps
+papermc/plugins/OasisWarps/warps.yml
