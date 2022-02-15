@@ -62,9 +62,12 @@ papermc/plugins/OasisWarps/warps.yml
 papermc/server.properties
 
 # Waterfall
-waterfall/plugins/*.jar
+## Libraries, caches, etc.
+waterfall/modules
+waterfall/logs
 ## Configurations
 waterfall/locations.yml
 ## Plugins
+waterfall/plugins/*.jar
 ### bStats
 waterfall/plugins/bStats/temp.txt
