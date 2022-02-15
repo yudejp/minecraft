@@ -1,0 +1,27 @@
+FROM alpine:latest AS builder
+
+# Install packages required to build
+RUN apk add --no-cache wget jq
+
+# Download Waterfall: waterfall.jar
+ADD ./download-paper.sh /build/
+RUN /build/download-paper.sh
+
+FROM eclipse-temurin:17.0.2_8-jre-alpine
+
+# Set timezone to Asia/Tokyo
+RUN apk --update add tzdata && \
+    cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && \
+    apk del tzdata && \
+    rm -rf /var/cache/apk/*
+
+# Add entire papermc directory
+WORKDIR /app
+
+# Cleanup
+# Copy files from builder
+COPY --from=builder /build/paper.jar /bin/
+#RUN echo $(ls)
+
+# Run the server (PaperMC)
+CMD ["sh", "run.sh"]
