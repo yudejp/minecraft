@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd /build
+
 # Fetch URL
 URL=https://papermc.io/api/v2/projects/waterfall
 MC_VERSION=$(wget -qO - $URL | jq -r '.versions[-1]')
