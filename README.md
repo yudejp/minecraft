@@ -1,5 +1,5 @@
 # minecraft
-🔳 **[WIP]** A Minecraft Server on yude.jp
+🔳 A Minecraft Server on yude.jp
 
 ## Deploy
 * Please build (`./manage.sh build`) before start the container in order to ensure avoiding any permission issues.
