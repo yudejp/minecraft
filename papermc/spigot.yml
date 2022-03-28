@@ -61,6 +61,7 @@ stats:
   forced-stats: {}
 world-settings:
   default:
+    seed-nether: 30084232
     seed-stronghold: default
     below-zero-generation-in-existing-chunks: true
     simulation-distance: default
