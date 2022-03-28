@@ -1,4 +1,4 @@
-version: '3'
+version: '3.9'
 
 services:
 
@@ -29,7 +29,7 @@ services:
 
   # cloudflared daemon for Bluemap Web UI
   cloudflared-bluemap:
-    image: ghcr.io/milgradesec/cloudflared:latest
+    image: cloudflare/cloudflared:2022.3.4-amd64
     user: root
     command: tunnel
     environment:
