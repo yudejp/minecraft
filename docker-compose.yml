@@ -33,7 +33,7 @@ services:
     user: root
     command: tunnel
     environment:
-      - TUNNEL_HOSTNAME=bluemap-test.yude.jp
+      - TUNNEL_HOSTNAME=bluemap.yude.jp
       - TUNNEL_URL=http://papermc:8100
       - TUNNEL_ORIGIN_CERT=/root/.cloudflared/cert.pem
     volumes:
