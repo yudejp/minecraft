@@ -1,5 +1,10 @@
 FROM alpine:latest AS builder
 
+ARG USERNAME=app
+ARG GROUPNAME=app
+ARG UID=1000
+ARG GID=1000
+
 # Install packages required to build
 RUN apk add --no-cache wget jq
 
