@@ -1,3 +1,6 @@
+# Jar
+*.jar
+
 # PaperMC
 ## Libraries, caches, etc.
 papermc/libraries
@@ -14,8 +17,6 @@ papermc/world_the_end
 ## Configurations
 papermc/eula.txt
 papermc/wepif.yml
-## Plugins
-papermc/plugins/*.jar
 ### mcMMO
 papermc/plugins/mcMMO/backup
 papermc/plugins/mcMMO/flatfile
@@ -67,8 +68,6 @@ waterfall/modules
 waterfall/logs
 ## Configurations
 waterfall/locations.yml
-## Plugins
-waterfall/plugins/*.jar
 ### bStats
 waterfall/plugins/bStats/temp.txt
 waterfall/config.yml
