@@ -8,12 +8,13 @@
 # Discord: https://discord.gg/papermc
 # IRC: #paper @ irc.esper.net ( https://webchat.esper.net/?channels=paper ) 
 # Website: https://papermc.io/ 
-# Docs: https://paper.readthedocs.org/ 
+# Docs: https://docs.papermc.io/ 
 
 use-display-name-in-quit-message: false
 verbose: false
-config-version: 24
+config-version: 25
 settings:
+  use-dimension-type-for-custom-spawners: false
   fix-target-selector-tag-completion: true
   time-command-affects-all-worlds: false
   log-player-ip-addresses: true
@@ -70,6 +71,7 @@ settings:
     enable-brigadier-highlighting: true
     enable-brigadier-completions: true
   loggers:
+    use-rgb-for-named-text-colors: true
     deobfuscate-stacktraces: true
   item-validation:
     display-name: 8192
@@ -88,7 +90,7 @@ settings:
     global-max-chunk-send-rate: -1.0
     enable-frustum-priority: false
     global-max-chunk-load-rate: 300.0
-    player-max-concurrent-loads: 4.0
+    player-max-concurrent-loads: 20.0
     global-max-concurrent-loads: 500.0
   packet-limiter:
     kick-message: '&cSent too many packets'
