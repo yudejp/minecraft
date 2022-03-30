@@ -14,14 +14,7 @@ services:
 
   # Waterfall
   waterfall:
-    build:
-      context: waterfall
-      dockerfile: Dockerfile
-      args:
-        UID: 1000
-        GID: 1000
-        USERNAME: app
-        GROUPNAME: app
+    image: ghcr.io/yudejp/waterfall:master
     volumes:
       - ./waterfall:/app
     tty: true
