@@ -1,4 +1,4 @@
-prevent_proxy_connections: false
+server_connect_timeout: 5000
 listeners:
 - query_port: 25565
   motd: |-
@@ -27,7 +27,7 @@ permissions:
   - '*'
 log_pings: false
 connection_throttle_limit: -1
-server_connect_timeout: 5000
+prevent_proxy_connections: false
 timeout: 30000
 player_limit: 50
 ip_forward: true
@@ -49,5 +49,5 @@ disabled_commands:
 servers:
   main:
     motd: main
-    address: papermc:25577
+    address: paper:25565
     restricted: false
