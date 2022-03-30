@@ -45,6 +45,7 @@ if [ $# = 1 ]; then
     elif [ "$ret" == "ps" ]; then
         docker-compose ps
     elif [ "$ret" == "build" ]; then
+        docker-compose pull
         docker-compose build --build-arg UID="`id -u`" --build-arg GID="`id -g`"
     elif [ "$ret" == "git-ls" ]; then
         git ls-files -v | grep "^h"
