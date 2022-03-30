@@ -4,7 +4,7 @@ services:
 
   # PaperMC
   paper:
-    image: ghcr.io/sksat/papermc-docker:1.18-temurin-17.0.1_12-jdk
+    image: ghcr.io/sksat/papermc-docker:renovate-openjdk-19.x-1.18.2-R0.1-SNAPSHOT-e7d928a-19-slim
     restart: always
     stdin_open: true
     environment:
