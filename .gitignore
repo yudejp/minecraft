@@ -10,6 +10,8 @@ paper/cache
 paper/version_history.json
 paper/usercache.json
 paper/.console_history
+#eBackups
+paper/plugins/eBackup/backups
 ## Worlds
 paper/world
 paper/world_nether
