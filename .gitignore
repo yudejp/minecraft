@@ -1,66 +1,66 @@
 # Jar
 *.jar
 
-# PaperMC
+# paper
 ## Libraries, caches, etc.
-papermc/libraries
-papermc/versions
-papermc/logs
-papermc/cache
-papermc/version_history.json
-papermc/usercache.json
-papermc/.console_history
+paper/libraries
+paper/versions
+paper/logs
+paper/cache
+paper/version_history.json
+paper/usercache.json
+paper/.console_history
 ## Worlds
-papermc/world
-papermc/world_nether
-papermc/world_the_end
+paper/world
+paper/world_nether
+paper/world_the_end
 ## Configurations
-papermc/eula.txt
-papermc/wepif.yml
+paper/eula.txt
+paper/wepif.yml
 ### mcMMO
-papermc/plugins/mcMMO/backup
-papermc/plugins/mcMMO/flatfile
-papermc/plugins/mcMMO/locales
+paper/plugins/mcMMO/backup
+paper/plugins/mcMMO/flatfile
+paper/plugins/mcMMO/locales
 ### LuckPerms
-papermc/plugins/LuckPerms/translations
-papermc/plugins/LuckPerms/libs
-papermc/plugins/LuckPerms/contexts
-papermc/plugins/LuckPerms/ja_JP.yml
-papermc/plugins/LuckPerms/luckperms-h2.mv.db
+paper/plugins/LuckPerms/translations
+paper/plugins/LuckPerms/libs
+paper/plugins/LuckPerms/contexts
+paper/plugins/LuckPerms/ja_JP.yml
+paper/plugins/LuckPerms/luckperms-h2.mv.db
 ### LockettePro
-papermc/plugins/LockettePro/lang*
+paper/plugins/LockettePro/lang*
 ### ImageMaps
-papermc/plugins/ImageMaps/images
-papermc/plugins/ImageMaps/maps.yml
+paper/plugins/ImageMaps/images
+paper/plugins/ImageMaps/maps.yml
 ### CoreProtect
-papermc/plugins/CoreProtect/.license
-papermc/plugins/CoreProtect/database.db
-papermc/plugins/CoreProtect/language.yml
+paper/plugins/CoreProtect/.license
+paper/plugins/CoreProtect/database.db
+paper/plugins/CoreProtect/language.yml
 ### bStats
-papermc/plugins/bStats/config.yml
+paper/plugins/bStats/config.yml
 ### BlueMap
-papermc/bluemap
-papermc/BlueMap
+paper/bluemap
+paper/BlueMap
 ### Multiverse-Core
-papermc/plugins/Multiverse-Core/scripts
-papermc/plugins/Multiverse-Core/worlds.yml
+paper/plugins/Multiverse-Core/scripts
+paper/plugins/Multiverse-Core/worlds.yml
 ### PluginMetrics
-papermc/plugins/PluginMetrics/config.yml
+paper/plugins/PluginMetrics/config.yml
 ### ProtocolLib
-papermc/plugins/ProtocolLib/lastupdate
+paper/plugins/ProtocolLib/lastupdate
 ### VeinMiner
-papermc/plugins/VeinMiner/playerdata
+paper/plugins/VeinMiner/playerdata
 ### WorldEdit
-papermc/plugins/WorldEdit/.archive-unpack
-papermc/plugins/WorldEdit/assets
-papermc/plugins/WorldEdit/schematics
-papermc/plugins/WorldEdit/sessions
+paper/plugins/WorldEdit/.archive-unpack
+paper/plugins/WorldEdit/assets
+paper/plugins/WorldEdit/schematics
+paper/plugins/WorldEdit/sessions
 ### WorldGuard
-papermc/plugins/WorldGuard/cache
-papermc/plugins/WorldGuard/worlds
+paper/plugins/WorldGuard/cache
+paper/plugins/WorldGuard/worlds
 ### OasisWarps
-papermc/plugins/OasisWarps/warps.yml
-papermc/server.properties
+paper/plugins/OasisWarps/warps.yml
+paper/server.properties
 
 # Waterfall
 ## Libraries, caches, etc.
