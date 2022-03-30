@@ -1,7 +1,7 @@
 #!/bin/sh
 # Count the number of arguments
 if [ "$#" -ne 1 ]; then
-  echo "Usage: $0 (build|up|down|ps|attach-p|attach-w)" 1>&2
+  echo "Usage: $0 (build|up|down|ps|attach-p|attach-w|git-ls)" 1>&2
   exit 1
 fi
 
@@ -22,6 +22,8 @@ if [ $# = 1 ]; then
         docker-compose ps
     elif [ "$ret" == "build" ]; then
         docker-compose build --build-arg UID="`id -u`" --build-arg GID="`id -g`"
+    elif [ "$ret" == "git-ls" ]; then
+        git ls-files -v | grep "^h"
     else
         echo "Error: Specified option '" + $1 + "' is not valid."
         exit 1
