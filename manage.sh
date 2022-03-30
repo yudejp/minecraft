@@ -13,7 +13,7 @@ if [ $# = 1 ]; then
     elif [ "$ret" == "down" ]; then
         docker-compose down
     elif [ "$ret" == "attach-p" ]; then
-        PAPERMC_CONTAINER_ID=$(docker-compose ps -q papermc)
+        PAPERMC_CONTAINER_ID=$(docker-compose ps -q paper)
         docker attach $PAPERMC_CONTAINER_ID
     elif [ "$ret" == "attach-w" ]; then
         WATERFALL_CONTAINER_ID=$(docker-compose ps -q waterfall)
