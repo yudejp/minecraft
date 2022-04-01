@@ -50,7 +50,7 @@ if [ $# = 1 ]; then
     elif [ "$ret" == "git-ls" ]; then
         git ls-files -v | grep "^h"
     else
-        echo "Error: Specified option '" + $1 + "' is not valid."
+        echo "Error: Specified option '$1' is not valid."
         exit 1
     fi
 fi
