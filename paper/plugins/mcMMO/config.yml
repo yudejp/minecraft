@@ -179,12 +179,12 @@ Backups:
 #  Settings for using a mySQL database
 ###
 MySQL:
-    Enabled: false
+    Enabled: true
     Debug: false
     Database:
-        User_Name: UserName
-        User_Password: UserPassword
-        Name: DataBaseName
+        User_Name: mcmmo
+        User_Password: mcmmo
+        Name: mcmmo
         TablePrefix: mcmmo_
         # This setting is the max simultaneous mysql connections allowed at a time, needs to be
         # high enough to support multiple player logins in quick succession
@@ -199,9 +199,9 @@ MySQL:
             Load: 20
             Save: 20
     Server:
-        SSL: true
+        SSL: false
         Port: 3306
-        Address: localhost
+        Address: db
 
 #
 #  Settings for Hardcore mode
