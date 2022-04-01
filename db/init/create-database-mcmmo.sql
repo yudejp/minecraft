@@ -1,0 +1,3 @@
+CREATE USER mcmmo IDENTIFIED BY 'mcmmo';
+CREATE DATABASE `mcmmo`;
+GRANT ALL PRIVILEGES ON `mcmmo`.* TO mcmmo IDENTIFIED BY 'mcmmo';
