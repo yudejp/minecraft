@@ -74,3 +74,7 @@ waterfall/locations.yml
 ### bStats
 waterfall/plugins/bStats/temp.txt
 waterfall/config.yml
+
+# Database
+## data directory
+db/data
