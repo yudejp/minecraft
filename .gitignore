@@ -23,6 +23,7 @@ paper/wepif.yml
 paper/plugins/mcMMO/backup
 paper/plugins/mcMMO/flatfile
 paper/plugins/mcMMO/locales
+paper/plugins/mcMMO/upgrades_overhaul.yml
 ### LuckPerms
 paper/plugins/LuckPerms/translations
 paper/plugins/LuckPerms/libs
