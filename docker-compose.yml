@@ -5,7 +5,7 @@ services:
   # PaperMC
   paper:
     image: ghcr.io/sksat/papermc-docker:renovate-openjdk-19.x-1.18.2-R0.1-SNAPSHOT-e7d928a-19-slim
-    restart: always
+    restart: on-failure:3
     stdin_open: true
     environment:
       JAVA_TOOL_OPTIONS: "-Xms1G -Xmx2G"
@@ -27,6 +27,7 @@ services:
       JAVA_OPTS: "-Xms256M -Xmx512M"
     depends_on:
       - "db"
+    restart: on-failure:3
 
   # cloudflared daemon for Bluemap Web UI
   cloudflared-bluemap:
