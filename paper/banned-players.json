@@ -1,5 +1,13 @@
 [
   {
+    "uuid": "444d0804-eddd-4285-9497-3380fd19f8d7",
+    "name": "Cyphant",
+    "created": "2022-05-05 11:17:40 +0000",
+    "source": "yude",
+    "expires": "forever",
+    "reason": "Banned by an operator."
+  },
+  {
     "uuid": "bc4371b0-2c89-4d63-90a0-89de3190ae41",
     "name": "jomfosher",
     "created": "2020-06-19 16:32:11 +0000",
