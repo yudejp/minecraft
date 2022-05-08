@@ -3,6 +3,6 @@
     "uuid": "bc22c1ed-2f0f-4be2-97e4-cc251b653fea",
     "name": "yude",
     "level": 4,
-    "bypassesPlayerLimit": true
+    "bypassesPlayerLimit": false
   }
 ]
