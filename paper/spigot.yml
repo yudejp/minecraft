@@ -34,7 +34,7 @@ settings:
     attackDamage:
       max: 2048.0
 messages:
-  whitelist: You are not whitelisted on this server!
+  whitelist: Please refer to https://yude.jp/minecraft
   unknown-command: Unknown command. Type "/help" for help.
   server-full: The server is full!
   outdated-client: Outdated client! Please use {0}
