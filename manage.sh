@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Count the number of arguments
 if [ "$#" -ne 1 ]; then
   echo "Usage: $0 (build|up|down|ps|attach-p|attach-w|shell-p|shell-w|shell-db|git-ls)";
