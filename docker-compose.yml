@@ -4,7 +4,7 @@ services:
 
   # PaperMC
   paper:
-    image: ghcr.io/kanagawa-iamtakagi-net/paper:2022.06.13
+    image: ghcr.io/yudejp/paper:master
     restart: on-failure:3
     stdin_open: true
     environment:
