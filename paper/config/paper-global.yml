@@ -68,6 +68,7 @@ misc:
   load-permissions-yml-before-plugins: true
   max-joins-per-tick: 3
   region-file-cache-size: 256
+  strict-advancement-dimension-check: false
   use-alternative-luck-formula: false
   use-dimension-type-for-custom-spawners: false
 packet-limiter:
