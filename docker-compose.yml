@@ -30,22 +30,16 @@ services:
     restart: on-failure:3
 
   # cloudflared daemon for Bluemap Web UI
-  cloudflared-bluemap:
-    image: cloudflare/cloudflared:2022.3.4-amd64
+  cloudflared:
+    image: cloudflare/cloudflared:latest
     user: root
-    command: tunnel
-    environment:
-      - TUNNEL_HOSTNAME=bluemap.yude.jp
-      - TUNNEL_URL=http://paper:8100
-      - TUNNEL_ORIGIN_CERT=/root/.cloudflared/cert.pem
+    restart: unless-stopped
+    command: tunnel --url http://paper:8100 --no-chunked-encoding run bluemap
     volumes:
       - '$HOME/.cloudflared:/root/.cloudflared'
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    restart: unless-stopped
     depends_on:
       - "paper"
-
+  
   # MariaDB
   db:
     restart: unless-stopped
