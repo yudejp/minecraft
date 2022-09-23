@@ -39,7 +39,7 @@ services:
       - '$HOME/.cloudflared:/root/.cloudflared'
     depends_on:
       - "paper"
-  
+
   # MariaDB
   db:
     restart: unless-stopped
