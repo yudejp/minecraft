@@ -78,3 +78,4 @@ waterfall/config.yml
 # Database
 ## data directory
 db/data
+paper/map-color-cache.dat
