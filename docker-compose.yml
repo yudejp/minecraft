@@ -6,6 +6,7 @@ services:
   paper:
     image: ghcr.io/yudejp/paper:master
     restart: on-failure:3
+    container_name: papermc
     stdin_open: true
     environment:
       JAVA_TOOL_OPTIONS: "-Xms1G -Xmx2G"
@@ -28,17 +29,6 @@ services:
     depends_on:
       - "db"
     restart: on-failure:3
-
-  # cloudflared daemon for Bluemap Web UI
-  cloudflared:
-    image: cloudflare/cloudflared:latest
-    user: root
-    restart: unless-stopped
-    command: tunnel --url http://paper:8100 --no-chunked-encoding run bluemap
-    volumes:
-      - '$HOME/.cloudflared:/root/.cloudflared'
-    depends_on:
-      - "paper"
 
   # MariaDB
   db:
