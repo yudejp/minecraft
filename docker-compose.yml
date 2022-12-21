@@ -4,20 +4,21 @@ services:
 
   # PaperMC
   paper:
-    image: ghcr.io/yudejp/paper:master
+    # image: ghcr.io/yudejp/paper:master
+    image: marctv/minecraft-papermc-server:latest
     restart: on-failure:3
     container_name: papermc
     stdin_open: true
     environment:
       JAVA_TOOL_OPTIONS: "-Xms1G -Xmx2G"
     volumes:
-      - ./paper:/app
+      - ./paper:/data
     depends_on:
       - "db"
 
   # Waterfall
   waterfall:
-    image: ghcr.io/yudejp/waterfall:master
+    image: ghcr.io/yudejp/waterfall-docker:master
     volumes:
       - ./waterfall:/app
     tty: true
