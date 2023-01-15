@@ -4,15 +4,14 @@ services:
 
   # PaperMC
   paper:
-    # image: ghcr.io/yudejp/paper:master
-    image: marctv/minecraft-papermc-server:latest
+    image: ghcr.io/yudejp/paper-docker:master
     restart: on-failure:3
     container_name: papermc
     stdin_open: true
     environment:
       JAVA_TOOL_OPTIONS: "-Xms1G -Xmx2G"
     volumes:
-      - ./paper:/data
+      - ./paper:/app
     depends_on:
       - "db"
 
